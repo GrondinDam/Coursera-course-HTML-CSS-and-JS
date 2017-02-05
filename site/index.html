@@ -3,10 +3,20 @@
 <head>
 	<title>Coursera's course</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 </head>
 <body>
 
 <h1 id="top"> Some useful tag in HTML </h1>
+
+<header>
+	<ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="#section1"> Section 1</a></li>
+		<li><a href="#section2">Section 2</a></li>
+	</ul>
+</header>
 
 <section id="section1">
 	<article id="article1"> 
@@ -97,9 +107,11 @@
 	<img src="http://vignette2.wikia.nocookie.net/characters/images/0/03/My_first_drawing_of_pikachu_by_hauser16-d612j4e.png/revision/latest?cb=20150102014645" width="10%" height="10%">
 </section>
 
-<section>
+<section id="bottom_navigation">
 
 	This section contains link who will travel in this page (PDA) <br/>
+
+	<div id="bottom_link">
 
 	<a href="#section1"> Back to the first section</a>	<br/>
 	<a href="#article2"> Back to the second article</a>	<br/>
@@ -109,9 +121,32 @@
 
 	<a href="#top"> Back to top ! </a>
 
+	</div>
 
 </section>
 
+<script type="text/javascript">
+	
+	var str1 = "1";
+	var str2 = "10";
+	var str3 = "100";
+
+	$("#article4").append(str1 + ' contient ' + str1.length + ' caractères.');
+	$("#article5").append(str2 + ' contient ' + str2.length + ' caractères.');
+	$("#article6").append(str3 + ' contient ' + str3.length + ' caractères.');
+
+	if (str1.length = 1) {
+		str1 = "00" +str1;
+		$("#article4").append(" ==> On le transforme en " + str1);
+	}
+
+	if (str2.length = 2) {
+		str2 = "0" +str2;
+		$("#article5").append(" ==> On le transforme en " + str2);
+
+
+	}
+</script>
 
 <footer> &copy; Moi même : GRONDIN Damien </footer>
 </body>

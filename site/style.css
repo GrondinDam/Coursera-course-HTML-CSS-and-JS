@@ -1,6 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
 h1 { 
 
 	color: red;
+	text-align: center;
  }
 
 h2 { 
@@ -9,11 +18,32 @@ h2 {
  	color: blue;
  }
 
-p { 
+section { 
 
-	color: green;
+	color: black;
+	border: 3px solid black;
+	margin-bottom: 10px;
+	padding: 20px;
+	border-radius: 10px;
+
 
   }
+#section1 {
+	color: green;
+	border: 3px solid black;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	padding: 20px;
+
+}
+#section2 {
+	color: red;
+	border: 3px solid black;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	padding: 20px;
+
+}
 
 ul {
 
@@ -22,4 +52,57 @@ ul {
 
 ol li {
 	color: purple;
+}
+
+header ul {
+	list-style: none;
+	text-align: center;
+
+}
+
+header a:link, a:visited {
+	text-decoration: none;
+	background-color: grey;
+	border: 2px solid black;
+	color: black;
+	display: block;	
+	margin-bottom: 3px;
+}
+
+header a:hover, a:active {
+	font-size: 2em;
+	color: red;
+}
+
+#bottom_link {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+
+
+}
+
+#bottom_link a {
+	
+	background-color: green;
+	padding: 5px;
+	margin: 5px;
+	display: block;
+
+
+
+}
+
+
+#bottom_link a:link, a:visited {
+	text-decoration: none;
+	border: 2px solid black;
+	border-radius: 50px;
+	color: black;
+	text-align: center;
+}
+
+#bottom_link a:hover, a:active {
+	font-size: 2em;
+	color: blue;
 }
